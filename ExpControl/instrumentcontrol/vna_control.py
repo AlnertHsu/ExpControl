@@ -4,7 +4,7 @@ import pyvisa
 import visa
 
 class InstrumentControl:
-    def __init__(self,vna_address='169.254.71.72')
+    def __init__(self,vna_address='10.0.1.8')
         self.vna = Keysight_E5071C('VNA','TCPIP0::'+vna_address+'::INSTR')
     
     def setup_vna(self,power=-30,avgs=1,measure='S21'):

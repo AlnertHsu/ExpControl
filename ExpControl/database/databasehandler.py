@@ -2,7 +2,7 @@ import os
 from qcodes import ParamSpec
 from qcodes.instrument.parameter import ManualParameter
 from qcodes.dataset.measurements import Measurement
-import qcodes.dataset.database as database
+# import qcodes.dataset.database as database
 import qcodes.dataset.experiment_container as exc
 from qcodes import initialise_or_create_database_at
 

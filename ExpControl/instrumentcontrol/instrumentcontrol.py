@@ -8,10 +8,11 @@ import pyvisa
 import visa
 
 class InstrumentControl:
-    def __init__(self):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
         return
     
-    def connect_to_vna(self,vna_address='169.254.71.72'):
+    def connect_to_vna(self,vna_address='10.0.1.8'):
         self.__vna = Keysight_E5071C('VNA','TCPIP0::'+vna_address+'::INSTR')
         return self.__vna
     
